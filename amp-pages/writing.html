@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link rel="favicon" href="favicon.png">
     <title>Writing</title>
 
     <link rel="icon" href="favicon.png">
@@ -54,12 +53,14 @@
         flex-direction: row;
         width: 100vw;
         height: 10vh;
+        margin-bottom: 100px;
       }
 
       .main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: black;
       }
 
       .left-align {
@@ -106,36 +107,37 @@
       }
 
       /* END HEADER PROPERTIES */
-
-      p {
-        text-indent: 2em;
-        font-weight: normal;
-        color: #262626;
-      }
-
-      #fab {
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        background: #7DF4E6;
-        margin: 80px 0 0 48px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      }
-
-      p.title {
-        text-indent: 0;
-        text-align: center;
+      .writing-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+        width: 55vw;
+        border-radius: 3px;
+        height: 30px;
+        background: #7DB4C6;
         font-size: 1.1em;
-        font-weight: bold; 
+        color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin: 8px;
       }
 
-      .writing {
-        margin: 50px 0;
-        max-width: 760px;
-        font-size: 1em;
-        color: #000;
-        line-height: 200%;
+      .writing-link:hover {
+        color: #7DF4E6;
       }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        flex-grow: 4;
+      }
+      .date {
+        width: 30%;
+        flex-grow: 4;
+        text-align: right;
+      }
+
     </style>
   </head>
 
@@ -149,13 +151,27 @@
         <span id="subheading">student, developer, musician</span>
       </div>
       <div class="right-align">
-        <span class="menu-link selected"><a href="../index.html">Home</a></span>
-        <span class="menu-link"><a href="/amp-pages/writing.html">Writing</a></span>
+        <span class="menu-link"><a href="../index.html">Home</a></span>
+        <span class="menu-link selected"><a href="/amp-pages/writing.html">Writing</a></span>
         <span class="menu-link"><a href="#">Coding</a></span>
         <span class="menu-link"><a href="#">Contact</a></span>
       </div>
+
     </div>
 
-  </body>
+      <div class="main-content">
+        <h2>Writing</h2>
 
+        <a class="writing-link" href="/amp-pages/hobbes.html">
+          <div class="title">Power and Violence</div>
+          <div class="date">10/5</div>
+        </a>
+
+        <a class="writing-link" href="/amp-pages/violence.html">
+          <div class="title">The Failures of Violence in Social Movements</div>
+          <div class="date">9/27</div>
+        </a>
+
+      </div>
+  </body>
 </html>
