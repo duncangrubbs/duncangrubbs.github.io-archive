@@ -54,12 +54,14 @@
         flex-direction: row;
         width: 100vw;
         height: 10vh;
+        margin-bottom: 7.5vh;
       }
 
       .main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: black;
       }
 
       .left-align {
@@ -68,7 +70,6 @@
         width: 50%;
         flex-grow: 4;
         padding: 16px;
-        margin: 20px 0 0 40px;
       }
       .right-align {
         width: 50%;
@@ -105,36 +106,102 @@
         color: #d3d3d3;
       }
 
-      /* END HEADER PROPERTIES */
-
-      p {
-        text-indent: 2em;
-        font-weight: normal;
-        color: #262626;
+      a.about {
+        color: #2D9CDB;
       }
 
-      #fab {
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        background: #7DF4E6;
-        margin: 80px 0 0 48px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      }
-
-      p.title {
-        text-indent: 0;
-        text-align: center;
-        font-size: 1.1em;
-        font-weight: bold; 
-      }
-
-      .writing {
-        margin: 50px 0;
-        max-width: 760px;
-        font-size: 1em;
-        color: #000;
+      .about {
         line-height: 200%;
+      }
+
+      /* END HEADER PROPERTIES */
+      h1 {
+        margin: 8px 0;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        margin-top: 100px;
+        width: 100vw;
+        color: #000;
+      }
+
+      .see-more {
+        color: #000;
+      }
+
+      .section {
+        margin: 24px;
+        width: 90%;
+        justify-self: center;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+
+      .writing-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+        /* width: 100%; */
+        border-radius: 3px;
+        height: 30px;
+        background: #7DB4C6;
+        font-size: 1.1em;
+        color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin: 12px 0;
+      }
+
+      .writing-link:hover {
+        color: #7DF4E6;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        flex-grow: 4;
+      }
+      .date {
+        width: 30%;
+        flex-grow: 4;
+        text-align: right;
+      }
+
+      .project-card {
+        width: 90%;
+        justify-self: center;
+        height: 150px;
+        background: green;
+        border-radius: 3px;
+        margin: 8px;
+      }
+
+      @media all and (max-width: 600px) {
+        .left-align {
+          width: 20%;
+          flex-grow: 4;
+        }
+        .right-align {
+          width: 80%;
+          flex-grow: 8;
+          font-size: .9em;
+        }
+        #name {
+          font-size: 1.7em;
+        }
+        #subheading {
+          display: none;
+        }
+        .content {
+          display: flex;
+          flex-direction: column
+        }
       }
     </style>
   </head>
@@ -152,9 +219,55 @@
         <span class="menu-link selected"><a href="../index.html">Home</a></span>
         <span class="menu-link"><a href="/amp-pages/writing.html">Writing</a></span>
         <span class="menu-link"><a href="#">Coding</a></span>
-        <span class="menu-link"><a href="#">Contact</a></span>
       </div>
     </div>
+
+    <div class="content">
+    <div class="about section">
+      <h1>About</h1>
+      <p class="about">
+        My name is Duncan Grubbs and I am from the San Francisco Bay Area.
+        I am currently an undergraduate student and the University of Rochester.
+        I am studying Computer and Data Science as well as Music and Political Science. I love Web and App
+        development and have experience with HTML, CSS, Javascript, Java, and Python. 
+        Along with programming, I love playing Jazz piano Ultimate Frisbee, mountian biking, hiking, and playing
+        videogames. You can find me on <a class="about" target="_blank" href="https://www.instagram.com/slamdunkkkkk/">Instagram</a>,
+       <a class="about" target="_blank"href="https://www.facebook.com/duncan.grubbs.7"> Facebook</a>,
+      <a class="about" target="_blank"href="https://www.linkedin.com/in/duncan-grubbs-01979a14a/"> LinkedIn</a>,
+        and <a class="about"target="_blank" href="https://github.com/duncangrubbs"> Github</a>.
+      </p>
+    </div>
+
+    <div class="writing section">
+      <h1>Writing</h1>
+      <a class="writing-link" href="/amp-pages/radicals.html">
+        <div class="title">Radicals</div>
+        <div class="date">10/18</div>
+      </a>
+
+      <a class="writing-link" href="/amp-pages/hobbes.html">
+        <div class="title">Power and Violence</div>
+        <div class="date">10/5</div>
+      </a>
+
+      <a class="writing-link" href="/amp-pages/violence.html">
+        <div class="title">The Failures of Violence in Social Movements</div>
+        <div class="date">9/27</div>
+      </a>
+
+      <h3><a href="/amp-pages/writing.html" class="see-more">See More</a></h3>
+    </div>
+    <div class="coding section">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card"></div>
+        <div class="project-card"></div>
+        <div class="project-card"></div>
+        <div class="project-card"></div>
+      </div>
+      <h3><a href="#" class="see-more">See More</a></h3>
+    </div>
+  </div>
 
   </body>
 
