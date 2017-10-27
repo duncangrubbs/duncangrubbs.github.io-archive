@@ -26,184 +26,7 @@
     </script>
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <style amp-custom>
-      body {
-        font-family: Roboto;
-        padding: 0;
-        margin: 0;
-        color: #FFF;
-      }
-
-      #header {
-        background: linear-gradient(-5deg, #2D9CDB 0%, #42C6BC 90%);
-        position: absolute;
-        width: 100%;
-        height: 22vh;
-        max-height: 320px;
-        transform-origin: left;
-        transform: skewY(-5deg);
-        overflow: hidden;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      }
-
-      .header-bar {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        height: 10vh;
-        margin-bottom: 7.5vh;
-      }
-
-      .main-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: black;
-      }
-
-      .left-align {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        flex-grow: 4;
-        padding: 16px;
-      }
-      .right-align {
-        width: 50%;
-        flex-grow: 4;
-        text-align: right;
-        padding: 16px;
-      }
-
-      #name {
-        font-size: 2.2em;
-      }
-
-      #subheading {
-        font-size: 1em;
-      }
-
-      .menu-link {
-        padding: 0 8px;
-        font-size: 1.1em;
-      }
-
-      .selected {
-        border-bottom: 2px solid #7DF4E6;
-      }
-
-      a {
-        text-decoration: none;
-        color: #FFF;
-        transition: all .15s ease-in-out;
-        padding-bottom: 5px;
-      }
-
-      a:hover {
-        color: #d3d3d3;
-      }
-
-      a.about {
-        color: #2D9CDB;
-      }
-
-      .about {
-        line-height: 200%;
-      }
-
-      /* END HEADER PROPERTIES */
-      h1 {
-        margin: 8px 0;
-      }
-
-      .content {
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        margin-top: 100px;
-        width: 100vw;
-        color: #000;
-      }
-
-      .see-more {
-        color: #000;
-      }
-
-      .section {
-        margin: 24px;
-        width: 90%;
-        justify-self: center;
-      }
-
-      .projects-grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
-      }
-
-      .writing-link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 8px;
-        /* width: 100%; */
-        border-radius: 3px;
-        height: 30px;
-        background: #7DB4C6;
-        font-size: 1.1em;
-        color: white;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        margin: 12px 0;
-      }
-
-      .writing-link:hover {
-        color: #7DF4E6;
-      }
-
-      .title {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        flex-grow: 4;
-      }
-      .date {
-        width: 30%;
-        flex-grow: 4;
-        text-align: right;
-      }
-
-      .project-card {
-        width: 90%;
-        justify-self: center;
-        height: 150px;
-        background: green;
-        border-radius: 3px;
-        margin: 8px;
-      }
-
-      @media all and (max-width: 600px) {
-        .left-align {
-          width: 20%;
-          flex-grow: 4;
-        }
-        .right-align {
-          width: 80%;
-          flex-grow: 8;
-          font-size: .9em;
-        }
-        #name {
-          font-size: 1.7em;
-        }
-        #subheading {
-          display: none;
-        }
-        .content {
-          display: flex;
-          flex-direction: column
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -218,7 +41,7 @@
       <div class="right-align">
         <span class="menu-link selected"><a href="../index.html">Home</a></span>
         <span class="menu-link"><a href="/amp-pages/writing.html">Writing</a></span>
-        <span class="menu-link"><a href="#">Coding</a></span>
+        <span class="menu-link"><a href="#">Projects</a></span>
       </div>
     </div>
 
@@ -230,8 +53,8 @@
         I am currently an undergraduate student and the University of Rochester.
         I am studying Computer and Data Science as well as Music and Political Science. I love Web and App
         development and have experience with HTML, CSS, Javascript, Java, and Python. 
-        Along with programming, I love playing Jazz piano Ultimate Frisbee, mountian biking, hiking, and playing
-        videogames. You can find me on <a class="about" target="_blank" href="https://www.instagram.com/slamdunkkkkk/">Instagram</a>,
+        Along with programming, I love playing Jazz piano Ultimate Frisbee, mountain biking, hiking, and playing
+        video games. You can find me on <a class="about" target="_blank" href="https://www.instagram.com/slamdunkkkkk/">Instagram</a>,
        <a class="about" target="_blank"href="https://www.facebook.com/duncan.grubbs.7"> Facebook</a>,
       <a class="about" target="_blank"href="https://www.linkedin.com/in/duncan-grubbs-01979a14a/"> LinkedIn</a>,
         and <a class="about"target="_blank" href="https://github.com/duncangrubbs"> Github</a>.
@@ -259,12 +82,22 @@
     </div>
     <div class="coding section">
       <h1>Projects</h1>
+
       <div class="projects-grid">
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
+        <a target="_blank" href="https://lettuce-go.firebaseapp.com">
+          <div class="project-card"><h2 class="project-title">Let's Go</h2></div>
+        </a>
+        <a target="_blank" href="https://earthquake-visualizer.appspot.com">
+          <div class="project-card"><h2 class="project-title">Earthquake Visualizer</h2></div>
+        </a>
+        <a target="_blank" href="#">
+          <div class="project-card"><h2 class="project-title">Square Tab</h2></div>
+        </a>
+        <a target="_blank" href="https://github.com/duncangrubbs/h4h-research">
+          <div class="project-card"><h2 class="project-title">h4h Research</h2></div>
+        </a>
       </div>
+
       <h3><a href="#" class="see-more">See More</a></h3>
     </div>
   </div>

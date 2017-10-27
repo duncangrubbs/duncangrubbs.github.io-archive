@@ -8,7 +8,7 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Writing</title>
 
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="../favicon.png">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     
@@ -25,139 +25,7 @@
     </script>
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-    <!-- STYLES -->
-    <style amp-custom>
-      body {
-        font-family: Roboto;
-        padding: 0;
-        margin: 0;
-        color: #FFF;
-      }
-
-      #header {
-        background: linear-gradient(-5deg, #2D9CDB 0%, #42C6BC 90%);
-        position: absolute;
-        width: 100%;
-        height: 22vh;
-        max-height: 320px;
-        transform-origin: left;
-        transform: skewY(-5deg);
-        overflow: hidden;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      }
-
-      .header-bar {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        height: 10vh;
-        margin-bottom: 7.5vh;
-      }
-
-      .main-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: black;
-      }
-
-      .left-align {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        flex-grow: 4;
-        padding: 16px;
-      }
-      .right-align {
-        width: 50%;
-        flex-grow: 4;
-        text-align: right;
-        padding: 16px;
-      }
-
-      #name {
-        font-size: 2.2em;
-      }
-
-      #subheading {
-        font-size: 1em;
-      }
-
-      @media all and (max-width: 600px) {
-        .left-align {
-          width: 20%;
-          flex-grow: 4;
-        }
-        .right-align {
-          width: 80%;
-          flex-grow: 8;
-          font-size: .9em;
-        }
-        #name {
-          font-size: 1.7em;
-        }
-        #subheading {
-          display: none;
-        }
-      }
-
-      .menu-link {
-        padding: 0 8px;
-        font-size: 1.1em;
-      }
-
-      .selected {
-        border-bottom: 2px solid #7DF4E6;
-      }
-
-      a {
-        text-decoration: none;
-        color: #FFF;
-        transition: all .15s ease-in-out;
-        padding-bottom: 5px;
-      }
-
-      a:hover {
-        color: #d3d3d3;
-      }
-      /* CONTENT STYLE, END HEADER */
-
-      .writing-link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 8px;
-        width: 85vw;
-        max-width: 650px;
-        border-radius: 3px;
-        height: 30px;
-        background: #7DB4C6;
-        font-size: 1.1em;
-        color: white;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        margin: 8px;
-      }
-
-      .writing-link:hover {
-        color: #7DF4E6;
-      }
-
-      .title {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        flex-grow: 4;
-      }
-      .date {
-        width: 30%;
-        flex-grow: 4;
-        text-align: right;
-      }
-    </style>
+    <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
@@ -173,12 +41,19 @@
       <div class="right-align">
         <span class="menu-link"><a href="../index.html">Home</a></span>
         <span class="menu-link selected"><a href="/amp-pages/writing.html">Writing</a></span>
-        <span class="menu-link"><a href="#">Coding</a></span>
+        <span class="menu-link"><a href="#">Projects</a></span>
       </div>
     </div>
     <!-- END HEADER -->
 
     <div class="main-content">
+      <h2>About</h2>
+      <p class="about-writing">
+        This is writing from my college writing class based around the subject of contemporary
+        social movements as well as writing from my college intro political science class,
+        Intro to Political Philsophy. All writing is my own unless otherwise cited.
+        © Duncan Grubbs 2017
+      </p>
       <h2>Writing</h2>
 
       <a class="writing-link" href="/amp-pages/radicals.html">
