@@ -127,6 +127,7 @@ a.about {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 650px;
   padding: 8px;
   border-radius: 3px;
   height: 30px;
@@ -134,7 +135,7 @@ a.about {
   font-size: 1.1em;
   color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  margin: 12px 0;
+  margin: 8px 0;
 }
 
 .writing-link:hover {
