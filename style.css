@@ -176,6 +176,9 @@ a.about {
     display: flex;
     flex-direction: column
   }
+  .writing-link {
+    width: 85vw;
+  }
 }
 
 /* WRITING HOME PAGE SPECFIC */
