@@ -26,7 +26,230 @@
     </script>
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <link rel="stylesheet" href="../style.css">
+    <style amp-custom>
+      body {
+        font-family: Roboto;
+        padding: 0;
+        margin: 0;
+        color: #FFF;
+      }
+
+      #header {
+        background: linear-gradient(-5deg, #2D9CDB 0%, #42C6BC 90%);
+        position: absolute;
+        width: 100%;
+        height: 22vh;
+        max-height: 320px;
+        transform-origin: left;
+        transform: skewY(-5deg);
+        overflow: hidden;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+
+      p {
+        font-weight: normal;
+        color: #262626;
+      }
+
+      .header-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 7.5vh;
+      }
+
+      .left-align {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        flex-grow: 4;
+        padding: 16px;
+      }
+
+      .right-align {
+        width: 50%;
+        flex-grow: 4;
+        text-align: right;
+        padding: 16px;
+      }
+
+      #name {
+        font-size: 2.5em;
+      }
+
+      #subheading {
+        font-size: 1em;
+      }
+
+      .menu-link {
+        padding: 0 8px;
+        font-size: 1.1em;
+      }
+
+      .selected {
+        border-bottom: 2px solid #7DF4E6;
+      }
+
+      a {
+        text-decoration: none;
+        color: #FFF;
+        transition: all .15s ease-in-out;
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        color: #d3d3d3;
+      }
+
+      /* END HEADER PROPERTIES */
+      h1 {
+        margin: 8px 0;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        margin-top: 100px;
+        width: 100vw;
+        color: #000;
+      }
+
+      .section {
+        margin: 24px;
+        width: 90%;
+        justify-self: center;
+      }
+
+      .see-more {
+        color: #000;
+      }
+
+      a.about {
+        color: #2D9CDB;
+      }
+
+      .about {
+        line-height: 200%;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+
+      .project-card {
+        display: flex;
+        width: 90%;
+        justify-self: center;
+        height: 150px;
+        background: green;
+        border-radius: 3px;
+        margin: 8px 0;
+      }
+
+      .project-title {
+        margin-left: 8px;
+        align-self: flex-end;
+        color: #FFF;
+      }
+
+      .writing-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 85vw;
+        max-width: 650px;
+        padding: 8px;
+        border-radius: 3px;
+        height: 30px;
+        background: #7DB4C6;
+        font-size: 1.1em;
+        color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin: 8px 0;
+      }
+
+      .home-writing-link {
+        width: 100%;
+      }
+
+      .writing-link:hover {
+        color: #7DF4E6;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        flex-grow: 4;
+      }
+
+      .date {
+        width: 30%;
+        flex-grow: 4;
+        text-align: right;
+      }
+
+      /* MOBILE STYLES */
+      @media all and (max-width: 600px) {
+        .left-align {
+          width: 20%;
+          flex-grow: 4;
+        }
+        .right-align {
+          width: 80%;
+          flex-grow: 8;
+          font-size: .9em;
+        }
+        #name {
+          font-size: 1.8em;
+        }
+        #subheading {
+          display: none;
+        }
+        .content {
+          display: flex;
+          flex-direction: column
+        }
+        .home-writing-link {
+          width: 85vw;
+        }
+      }
+
+      /* WRITING HOME PAGE SPECFIC */
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        color: black;
+      }
+
+      .writing-link:hover {
+        color: #7DF4E6;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        flex-grow: 4;
+      }
+      .date {
+        width: 30%;
+        flex-grow: 4;
+        text-align: right;
+      }
+
+      .about-writing {
+        width: 85vw;
+        max-width: 650px;
+      }
+    </style>
   </head>
 
   <body>
@@ -53,7 +276,7 @@
         This is writing from my college writing class based around the subject of contemporary
         social movements as well as writing from my college intro political science class,
         Intro to Political Philsophy. All writing is my own unless otherwise cited.
-        © Duncan Grubbs 2017
+        </p><p>© Duncan Grubbs 2017
       </p>
       <h2>Writing</h2>
 

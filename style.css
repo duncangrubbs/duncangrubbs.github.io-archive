@@ -20,6 +20,12 @@ body {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+p {
+  text-indent: 2em;
+  font-weight: normal;
+  color: #262626;
+}
+
 .header-bar {
   display: flex;
   flex-direction: row;
@@ -127,6 +133,7 @@ a.about {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 85vw;
   max-width: 650px;
   padding: 8px;
   border-radius: 3px;
@@ -136,6 +143,10 @@ a.about {
   color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin: 8px 0;
+}
+
+.home-writing-link {
+  width: 100%;
 }
 
 .writing-link:hover {
@@ -176,7 +187,7 @@ a.about {
     display: flex;
     flex-direction: column
   }
-  .writing-link {
+  .home-writing-link {
     width: 85vw;
   }
 }
@@ -209,4 +220,33 @@ a.about {
 .about-writing {
   width: 85vw;
   max-width: 650px;
+}
+
+/* Writing page specific properties */
+#fab {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #7DF4E6;
+  margin-left: 4vw;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+p.title {
+  text-indent: 0;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold; 
+}
+
+.writing {
+  margin: 3vh 0;
+  width: 90vw;
+  max-width: 760px;
+  font-size: 1em;
+  color: #000;
+  line-height: 200%;
 }
