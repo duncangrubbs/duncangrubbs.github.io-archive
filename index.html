@@ -147,15 +147,31 @@
         width: 90%;
         justify-self: center;
         height: 150px;
-        background: green;
+        background-position: center center;
+        background-size: cover;
+        background-image: url('./res/square-tab.png');
         border-radius: 3px;
         margin: 8px 0;
+      }
+
+      .project-card.research {
+        background-image: url('./res/h4h-research.png');
+      }
+
+      .project-card.lets-go {
+        background-image: url('./res/lets-go.png');
+      }
+
+      .project-card.earthq {
+        background-image: url('./res/earthq-visualizer.png');
       }
 
       .project-title {
         margin-left: 8px;
         align-self: flex-end;
         color: #FFF;
+        font-weight: bold;
+        text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       }
 
       .writing-link {
@@ -167,7 +183,7 @@
         padding: 8px;
         border-radius: 3px;
         height: 30px;
-        background: #7DB4C6;
+        background: #4FC3F7;
         font-size: 1.1em;
         color: white;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -179,7 +195,7 @@
       }
 
       .writing-link:hover {
-        color: #7DF4E6;
+        color: light-grey;
       }
 
       .title {
@@ -279,16 +295,16 @@
 
       <div class="projects-grid">
         <a target="_blank" href="https://lettuce-go.firebaseapp.com">
-          <div class="project-card"><h2 class="project-title">Let's Go</h2></div>
+          <div class="project-card lets-go"><h2 class="project-title">Let's Go</h2></div>
         </a>
         <a target="_blank" href="https://earthquake-visualizer.appspot.com">
-          <div class="project-card"><h2 class="project-title">Earthquake Visualizer</h2></div>
+          <div class="project-card earthq"><h2 class="project-title">Earthquake Visualizer</h2></div>
         </a>
         <a target="_blank" href="#">
-          <div class="project-card"><h2 class="project-title">Square Tab</h2></div>
+          <div class="project-card sq-tab"><h2 class="project-title">Square Tab</h2></div>
         </a>
         <a target="_blank" href="https://github.com/duncangrubbs/h4h-research">
-          <div class="project-card"><h2 class="project-title">h4h Research</h2></div>
+          <div class="project-card research"><h2 class="project-title">h4h Research</h2></div>
         </a>
       </div>
 
