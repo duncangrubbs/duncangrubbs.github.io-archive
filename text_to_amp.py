@@ -3,8 +3,8 @@ import os
 articles = os.listdir('./articles/')
 # articles.remove('.DS_Store')
 
-amp_head = open('./amp-boiler/head.txt', 'r')
-amp_foot = open('./amp-boiler/foot.txt', 'r')
+amp_head = open('./templates/head.txt', 'r')
+amp_foot = open('./templates/foot.txt', 'r')
 head = amp_head.read()
 foot = amp_foot.read()
 

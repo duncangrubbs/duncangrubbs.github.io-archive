@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="theme-color" content="#42C6BC">
-    <title>Writing</title>
+    <title>Writing -- Hobbes</title>
 
-    <link rel="icon" href="../favicon.png">
+    <link rel="icon" href="favicon.png">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     
@@ -50,8 +50,16 @@
       }
 
       p {
+        text-indent: 2em;
         font-weight: normal;
         color: #262626;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
       }
 
       .header-bar {
@@ -106,73 +114,6 @@
       }
 
       /* END HEADER PROPERTIES */
-      h1 {
-        margin: 8px 0;
-      }
-
-      .content {
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        margin-top: 100px;
-        width: 100vw;
-        color: #000;
-      }
-
-      .section {
-        margin: 24px;
-        width: 90%;
-        justify-self: center;
-      }
-
-      .see-more {
-        color: #000;
-      }
-
-      a.about {
-        color: #2D9CDB;
-      }
-
-      .about {
-        line-height: 200%;
-      }
-
-      .writing-link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 85vw;
-        max-width: 650px;
-        padding: 8px;
-        border-radius: 3px;
-        height: 30px;
-        background: #4FC3F7;
-        font-size: 1.1em;
-        color: white;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        margin: 8px 0;
-      }
-
-      .home-writing-link {
-        width: 100%;
-      }
-
-      .writing-link:hover {
-        color: light-grey;
-      }
-
-      .title {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        flex-grow: 4;
-      }
-
-      .date {
-        width: 30%;
-        flex-grow: 4;
-        text-align: right;
-      }
-
       /* MOBILE STYLES */
       @media all and (max-width: 600px) {
         .left-align {
@@ -199,46 +140,39 @@
         }
       }
 
-      /* WRITING HOME PAGE SPECFIC */
-      .main-content {
+      /* Writing page specific properties */
+      #fab {
         display: flex;
-        flex-direction: column;
+        width: 55px;
+        height: 55px;
         align-items: center;
-        text-align: left;
-        color: black;
+        justify-content: center;
+        border-radius: 50%;
+        background: #7DF4E6;
+        margin-left: 4vw;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
 
-      .writing-link:hover {
-        color: #7DF4E6;
+      p.title {
+        text-indent: 0;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold; 
       }
 
-      .title {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        flex-grow: 4;
-      }
-      .date {
-        width: 30%;
-        flex-grow: 4;
-        text-align: right;
-      }
-
-      .about-writing {
-        width: 85vw;
-        max-width: 650px;
-      }
-
-      #copyright {
-        position: fixed;
-        bottom: 0;
+      .writing {
+        margin: 3vh 0;
+        width: 90vw;
+        max-width: 760px;
+        font-size: 1em;
+        color: #000;
+        line-height: 200%;
       }
     </style>
   </head>
 
   <body>
 
-    <!-- HEADER -->
     <div id="header"></div>
 
     <div class="header-bar">
@@ -248,40 +182,32 @@
       </div>
       <div class="right-align">
         <span class="menu-link"><a href="../index.html">Home</a></span>
-        <span class="menu-link selected"><a href="/amp-pages/writing.html">Writing</a></span>
-        <span class="menu-link"><a href="#">Projects</a></span>
+        <span class="menu-link selected"><a href="../writing.html">Writing</a></span>
+        <span class="menu-link"><a href="../projects.html">Projects</a></span>
       </div>
     </div>
+
     <!-- END HEADER -->
-
-    <div class="main-content">
-      <h2>About</h2>
-      <p class="about-writing">
-        This is writing from my college writing class based around the subject of contemporary
-        social movements as well as writing from my college intro political science class,
-        Intro to Political Philsophy. All writing is my own unless otherwise cited.
-      </p>
-      <h2>Writing</h2>
-
-      <div class="writing-wrapper">
-        <a class="writing-link" href="/amp-pages/radicals.html">
-          <div class="title">Radicals</div>
-          <div class="date">10/18</div>
-        </a>
-
-        <a class="writing-link" href="/amp-pages/hobbes.html">
-          <div class="title">Power and Violence</div>
-          <div class="date">10/5</div>
-        </a>
-
-        <a class="writing-link" href="/amp-pages/violence.html">
-          <div class="title">The Failures of Violence in Social Movements</div>
-          <div class="date">9/27</div>
-        </a>
+    
+    <a href="../writing.html">
+      <div id="fab">
+        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
       </div>
+    </a>
+    <div class="main-content">
+      <div class="writing">
+          <p class="title">Freedom on My Mind</p>
+        <p>The Civil Rights Movement, while popularly known to be the period of time between 1954 and 1968, includes many more years of struggle and can still be seen today. The movie &ldquo;Freedom on My Mind&rdquo; documents the Freedom Summer of 1964 in Mississippi, which was an integral part of the Civil Rights Movement. In the film, while talking about a rally that occurred just before many northern volunteers left for Mississippi, an interviewee mentions the quote: &ldquo;They say that freedom is a constant struggle, oh lord we struggled so long, we must be free&rdquo;.</p>
 
-      <p id="copyright">© Duncan Grubbs 2017</p>
+<p> While this quote summarizes the film well, it also reflects on the whole movement itself. Since the creation of the United States, blacks have been treated as lower class citizens and discriminated against. At the time of the Freedom Summer, the struggle for rights had been ongoing for almost 200 years. Blacks had struggled for so long, they must be free, but they were not. Their frustration with the amount of time it was taking to change the minds of Americans is clear in the quote.</p>
 
+<p> The film focuses on a specific event of the Civil Rights Movement to highlight the struggle. In the summer of 1964, young volunteers from the north came to Mississippi to help the Civil Rights Movement in the south. The Freedom Summer was organized by groups like the SNCC and the NAACP and was designed to &ldquo;bring the law to the south&rdquo; through the northerner&rsquo;s social and legal status. The film showed the intensity of the struggle that ensued through graphic images and interviews with people who were directly involved. The movement was long, hard, and often violent. By using a large amount of footage from the time, the film gave a eerie look into the violent reality for all those involved, including the whites. The harassment and pressure the volunteers faced was constant. Their struggle for freedom never wavered, and for some it still persists.<br>
+</p></div>
     </div>
+
   </body>
+
 </html>

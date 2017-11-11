@@ -6,9 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link rel="favicon" href="favicon.png">
     <meta name="theme-color" content="#42C6BC">
-    <title>Duncan Grubbs</title>
+    <title>Projects</title>
 
     <link rel="icon" href="favicon.png">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
@@ -108,37 +107,20 @@
 
       /* END HEADER PROPERTIES */
       h1 {
-        margin: 8px 0;
+        margin: 16px 0;
+        color: #000;
       }
 
-      .content {
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        margin-top: 100px;
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100vw;
-        color: #000;
-      }
-
-      .section {
-        margin: 24px;
-        width: 90%;
-        justify-self: center;
-      }
-
-      .see-more {
-        color: #000;
-      }
-
-      a.about {
-        color: #2D9CDB;
-      }
-
-      .about {
-        line-height: 200%;
       }
 
       .projects-grid {
         display: grid;
+        width: 70%;
         grid-template-columns: 50% 50%;
       }
 
@@ -174,43 +156,6 @@
         text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       }
 
-      .writing-link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 85vw;
-        max-width: 650px;
-        padding: 8px;
-        border-radius: 3px;
-        height: 30px;
-        background: #4FC3F7;
-        font-size: 1.1em;
-        color: white;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        margin: 8px 0;
-      }
-
-      .home-writing-link {
-        width: 100%;
-      }
-
-      .writing-link:hover {
-        color: light-grey;
-      }
-
-      .title {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        flex-grow: 4;
-      }
-
-      .date {
-        width: 30%;
-        flex-grow: 4;
-        text-align: right;
-      }
-
       /* MOBILE STYLES */
       @media all and (max-width: 600px) {
         .left-align {
@@ -225,6 +170,11 @@
         #name {
           font-size: 1.8em;
         }
+        .projects-grid {
+          display: grid;
+          width: 95%;
+          grid-template-columns: 50% 50%;
+        }
         #subheading {
           display: none;
         }
@@ -232,65 +182,34 @@
           display: flex;
           flex-direction: column
         }
-        .home-writing-link {
-          width: 85vw;
-        }
+      }
+
+      #copyright {
+        position: fixed;
+        bottom: 0;
       }
     </style>
   </head>
 
   <body>
 
+    <!-- HEADER -->
     <div id="header"></div>
 
     <div class="header-bar">
       <div class="left-align">
-        <a href="index.html"><span id="name">Duncan Grubbs</span></a>
+        <a href="../index.html"><span id="name">Duncan Grubbs</span></a>
         <span id="subheading">student, developer, musician</span>
       </div>
       <div class="right-align">
-        <span class="menu-link selected"><a href="index.html">Home</a></span>
+        <span class="menu-link"><a href="index.html">Home</a></span>
         <span class="menu-link"><a href="writing.html">Writing</a></span>
-        <span class="menu-link"><a href="/projects.html">Projects</a></span>
+        <span class="menu-link selected"><a href="/projects.html">Projects</a></span>
       </div>
     </div>
+    <!-- END HEADER -->
 
-    <div class="content">
-    <div class="about section">
-      <h1>About</h1>
-      <p class="about">
-        My name is Duncan Grubbs and I am from the San Francisco Bay Area.
-        I am currently an undergraduate student at the University of Rochester.
-        I am studying Computer Science, Data Science, Music and Political Science. I love web and app
-        development and have experience with HTML, CSS, Javascript, Java, and Python. 
-        Along with programming, I love jazz piano, ultimate frisbee, mountain biking, hiking, and
-        video games. You can find me on <a class="about" target="_blank" href="https://www.instagram.com/slamdunkkkkk/">Instagram</a>,
-       <a class="about" target="_blank"href="https://www.facebook.com/duncan.grubbs.7"> Facebook</a>,
-      <a class="about" target="_blank"href="https://www.linkedin.com/in/duncan-grubbs-01979a14a/"> LinkedIn</a>,
-        and <a class="about"target="_blank" href="https://github.com/duncangrubbs"> Github</a>.
-      </p>
-    </div>
-
-    <div class="writing section">
-      <h1>Writing</h1>
-      <a class="writing-link home-writing-link" href="/amp-pages/radicals.html">
-        <div class="title">The Role of Radicals</div>
-        <div class="date">10/18</div>
-      </a>
-
-      <a class="writing-link home-writing-link" href="/amp-pages/hobbes.html">
-        <div class="title">Power and Violence</div>
-        <div class="date">10/5</div>
-      </a>
-
-      <a class="writing-link home-writing-link" href="/amp-pages/violence.html">
-        <div class="title">The Failures of Violence in Social Movements</div>
-        <div class="date">9/27</div>
-      </a>
-
-      <h3><a href="/writing.html" class="see-more">See More</a></h3>
-    </div>
-    <div class="coding section">
+    <div class="main-content">
       <h1>Projects</h1>
 
       <div class="projects-grid">
@@ -307,11 +226,8 @@
           <div class="project-card research"><h2 class="project-title">h4h Research</h2></div>
         </a>
       </div>
-
-      <h3><a href="/projects.html" class="see-more">See More</a></h3>
+      <p id="copyright">© Duncan Grubbs 2017</p>
     </div>
-  </div>
 
   </body>
-
 </html>

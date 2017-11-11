@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html amp lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="theme-color" content="#42C6BC">
+    <title>Writing -- Hobbes</title>
+
+    <link rel="icon" href="favicon.png">
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "PersonalPage",
+        "headline": "Duncan Grubbs' Personal Website'",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      body {
+        font-family: Roboto;
+        padding: 0;
+        margin: 0;
+        color: #FFF;
+      }
+
+      #header {
+        background: linear-gradient(-5deg, #2D9CDB 0%, #42C6BC 90%);
+        position: absolute;
+        width: 100%;
+        height: 22vh;
+        max-height: 320px;
+        transform-origin: left;
+        transform: skewY(-5deg);
+        overflow: hidden;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+
+      p {
+        text-indent: 2em;
+        font-weight: normal;
+        color: #262626;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+      }
+
+      .header-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 7.5vh;
+      }
+
+      .left-align {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        flex-grow: 4;
+        padding: 16px;
+      }
+
+      .right-align {
+        width: 50%;
+        flex-grow: 4;
+        text-align: right;
+        padding: 16px;
+      }
+
+      #name {
+        font-size: 2.5em;
+      }
+
+      #subheading {
+        font-size: 1em;
+      }
+
+      .menu-link {
+        padding: 0 8px;
+        font-size: 1.1em;
+      }
+
+      .selected {
+        border-bottom: 2px solid #7DF4E6;
+      }
+
+      a {
+        text-decoration: none;
+        color: #FFF;
+        transition: all .15s ease-in-out;
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        color: #d3d3d3;
+      }
+
+      /* END HEADER PROPERTIES */
+      /* MOBILE STYLES */
+      @media all and (max-width: 600px) {
+        .left-align {
+          width: 20%;
+          flex-grow: 4;
+        }
+        .right-align {
+          width: 80%;
+          flex-grow: 8;
+          font-size: .9em;
+        }
+        #name {
+          font-size: 1.8em;
+        }
+        #subheading {
+          display: none;
+        }
+        .content {
+          display: flex;
+          flex-direction: column
+        }
+        .home-writing-link {
+          width: 85vw;
+        }
+      }
+
+      /* Writing page specific properties */
+      #fab {
+        display: flex;
+        width: 55px;
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #7DF4E6;
+        margin-left: 4vw;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+
+      p.title {
+        text-indent: 0;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold; 
+      }
+
+      .writing {
+        margin: 3vh 0;
+        width: 90vw;
+        max-width: 760px;
+        font-size: 1em;
+        color: #000;
+        line-height: 200%;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="header"></div>
+
+    <div class="header-bar">
+      <div class="left-align">
+        <a href="../index.html"><span id="name">Duncan Grubbs</span></a>
+        <span id="subheading">student, developer, musician</span>
+      </div>
+      <div class="right-align">
+        <span class="menu-link"><a href="../index.html">Home</a></span>
+        <span class="menu-link selected"><a href="../writing.html">Writing</a></span>
+        <span class="menu-link"><a href="../index.html">Coding</a></span>
+      </div>
+    </div>
+
+    <!-- END HEADER -->
+    
+    <a href="../writing.html">
+      <div id="fab">
+        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+      </div>
+    </a>
+    <div class="main-content">
+      <div class="writing">
