@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#42C6BC">
     <title>Writing</title>
 
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     
@@ -144,16 +144,12 @@
         max-width: 650px;
         padding: 8px;
         border-radius: 3px;
-        height: 30px;
+        min-height: 30px;
         background: #4FC3F7;
         font-size: 1.1em;
         color: white;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         margin: 8px 0;
-      }
-
-      .home-writing-link {
-        width: 100%;
       }
 
       .writing-link:hover {
@@ -173,31 +169,7 @@
         text-align: right;
       }
 
-      /* MOBILE STYLES */
-      @media all and (max-width: 600px) {
-        .left-align {
-          width: 20%;
-          flex-grow: 4;
-        }
-        .right-align {
-          width: 80%;
-          flex-grow: 8;
-          font-size: .9em;
-        }
-        #name {
-          font-size: 1.8em;
-        }
-        #subheading {
-          display: none;
-        }
-        .content {
-          display: flex;
-          flex-direction: column
-        }
-        .home-writing-link {
-          width: 85vw;
-        }
-      }
+      
 
       /* WRITING HOME PAGE SPECFIC */
       .main-content {
@@ -233,6 +205,36 @@
         position: fixed;
         bottom: 0;
       }
+
+      /* MOBILE STYLES */
+      @media all and (max-width: 600px) {
+        .left-align {
+          width: 20%;
+          flex-grow: 4;
+        }
+        .right-align {
+          width: 80%;
+          flex-grow: 8;
+          font-size: .9em;
+        }
+        #name {
+          font-size: 1.8em;
+        }
+        #subheading {
+          display: none;
+        }
+        .content {
+          display: flex;
+          flex-direction: column
+        }
+        .home-writing-link {
+          width: 85vw;
+        }
+        #copyright {
+          position: relative;
+          bottom:auto;
+        }
+      }
     </style>
   </head>
 
@@ -264,6 +266,11 @@
       <h2>Writing</h2>
 
       <div class="writing-wrapper">
+          <a class="writing-link" href="/amp-pages/krm.html">
+            <div class="title">The Connections between Reason, Freedom, and Order in Politics</div>
+            <div class="date">11/16</div>
+          </a>
+
         <a class="writing-link" href="/amp-pages/radicals.html">
           <div class="title">Radicals</div>
           <div class="date">10/18</div>

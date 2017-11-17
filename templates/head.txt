@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="theme-color" content="#42C6BC">
-    <title>Writing -- Hobbes</title>
+    <title>Writing -- </title>
 
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     

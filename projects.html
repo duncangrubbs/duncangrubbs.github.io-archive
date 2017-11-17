@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#42C6BC">
     <title>Projects</title>
 
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     
@@ -156,6 +156,11 @@
         text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       }
 
+      #copyright {
+        position: fixed;
+        bottom: 0;
+      }
+
       /* MOBILE STYLES */
       @media all and (max-width: 600px) {
         .left-align {
@@ -182,11 +187,10 @@
           display: flex;
           flex-direction: column
         }
-      }
-
-      #copyright {
-        position: fixed;
-        bottom: 0;
+        #copyright {
+          position: relative;
+          bottom: auto;
+        }
       }
     </style>
   </head>
