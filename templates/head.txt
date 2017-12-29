@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#42C6BC">
     <title>Writing -- </title>
 
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../favicon.png">
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     
@@ -28,7 +28,7 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom>
       body {
-        font-family: Roboto;
+        font-family: Roboto, Arial;
         padding: 0;
         margin: 0;
         color: #FFF;
@@ -46,7 +46,7 @@
         z-index: -1;
         top: 0;
         left: 0;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       }
 
       p {
@@ -99,7 +99,7 @@
       }
 
       .selected {
-        border-bottom: 2px solid #7DF4E6;
+        border-bottom: 2px solid #6359d6;
       }
 
       a {
@@ -148,8 +148,13 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: #7DF4E6;
+        background: #6359d6;
         margin-left: 4vw;
+        box-shadow: 2px 2px 11px rgba(0,0,0,0.19);
+        transition: all 0.2s ease-in-out;
+      }
+
+      #fab:hover {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
 
