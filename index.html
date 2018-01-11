@@ -47,7 +47,7 @@
         z-index: -1;
         top: 0;
         left: 0;
-         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       }
 
       p {
@@ -100,10 +100,6 @@
         color: #FFF;
         transition: all .15s ease-in-out;
         padding-bottom: 5px;
-      }
-
-      a:hover {
-        color: #d3d3d3;
       }
 
       /* END HEADER PROPERTIES */
@@ -186,7 +182,7 @@
         background: #4FC3F7;
         font-size: 1.1em;
         color: white;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         margin: 8px 0;
       }
 
@@ -213,6 +209,22 @@
 
       .social-icon {
         margin: 2px 4px 2px 0;
+      }
+
+      .download-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        color: #FFF;
+        width: 84px;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        background: #4FC3F7;
+      }
+
+      .writing-link:hover, .download-link:hover {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       }
 
       /* MOBILE STYLES */
@@ -291,6 +303,13 @@
       <a class="about" target="_blank"href="https://www.linkedin.com/in/duncan-grubbs-01979a14a/"> LinkedIn</a>,
         and <a class="about"target="_blank" href="https://github.com/duncangrubbs"> Github</a>.
       </p>
+      <a href="/res/Duncan Grubbs.pdf" download class="download-link">
+        <svg fill="#FFFFFF" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+        Resumé
+      </a>
     </div>
 
     <div class="writing section">
