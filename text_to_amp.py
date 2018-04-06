@@ -12,17 +12,17 @@ for a in articles:
   path = './articles/' + a
   article = open(path, 'r')
   article_string = article.read()
-  article.close();
+  article.close()
   full_html = head + article_string + foot
 
   a = a.replace('txt', 'html')
   name = './amp-pages/' + a
-  full = open(name, 'w');
-  full.write(full_html);
-  full.close();
+  full = open(name, 'w')
+  full.write(full_html)
+  full.close()
 
-amp_head.close();
-amp_foot.close();
+amp_head.close()
+amp_foot.close()
 
 
 
